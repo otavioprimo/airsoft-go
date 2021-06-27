@@ -1,22 +1,20 @@
-declare module 'styled-components/native' {
-  export interface DefaultTheme {
-    primary: string;
-    secondary: string;
-    secondaryStrong: string;
-    secondaryDisabled: string;
-    textPrimary: string;
-    textSecondary: string;
-    background: string;
-    overlay: string;
+export interface ThemeType {
+  primary: string;
+  secondary: string;
+  secondaryStrong: string;
+  secondaryDisabled: string;
+  textPrimary: string;
+  textSecondary: string;
+  background: string;
+  overlay: string;
 
-    danger: string;
-    success: string;
-    warning: string;
+  danger: string;
+  success: string;
+  warning: string;
 
-    google: string;
-    facebook: string;
-    apple: string;
-  }
+  google: string;
+  facebook: string;
+  apple: string;
 }
 
 import DarkTheme from './dark.theme';
