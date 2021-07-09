@@ -16,11 +16,12 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: Install Dependencies
-        run: yarn
 
       - name: sei nao
         run: yarn config list
+
+      - name: Install Dependencies
+        run: yarn
 
       - name: Run Linter
         run: yarn lint .
