@@ -3,7 +3,7 @@ import {act} from 'react-test-renderer';
 import {render} from 'test/test-utils';
 import {Text, View} from 'react-native';
 
-import Container from './index';
+import Container, {TEST_ID_SAFE_AREA, TEST_ID_SCROLl_VIEW} from './index';
 
 afterEach(async () => {
   await act(async () => {});
@@ -33,5 +33,15 @@ describe('Design System - Container', () => {
     const {getByText} = render(containerWithChildren);
     const textComponent = getByText('My Children Component');
     expect(textComponent).toBeDefined();
+  });
+
+  it('SafeArea should exists', () => {
+    const {getByTestId} = render(<Container />);
+    expect(getByTestId(TEST_ID_SAFE_AREA)).toBeDefined();
+  });
+
+  it('ScrollView should exists', () => {
+    const {getByTestId} = render(<Container />);
+    expect(getByTestId(TEST_ID_SCROLl_VIEW)).toBeDefined();
   });
 });

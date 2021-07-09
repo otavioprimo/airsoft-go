@@ -3,6 +3,12 @@ module.exports = {
   maxWorkers: 1,
   collectCoverage: false,
   collectCoverageFrom: ['<rootDir>/src/**'],
+  coveragePathIgnorePatterns: [
+    '.*__snapshots__/.*',
+    'style.ts',
+    './src/modules/core/*',
+    'App.tsx',
+  ],
   coverageReporters: ['text-summary', 'lcov'],
   testPathIgnorePatterns: ['__tests__/data/', '__tests__/helpers/'],
   transformIgnorePatterns: [
