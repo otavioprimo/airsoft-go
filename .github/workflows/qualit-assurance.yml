@@ -20,7 +20,7 @@ jobs:
         run: yarn
 
       - name: sei nao
-      - run: yarn config list
+        run: yarn config list
 
       - name: Run Linter
         run: yarn lint .
