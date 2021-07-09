@@ -17,6 +17,8 @@ module.exports = {
       'react-native|' +
       'react-native-iphone-x-helper|' +
       '@react-navigation|' +
+      'react-native-reanimated|' +
+      '@fortawesome/react-native-fontawesome|' +
       '/.*)/)',
   ],
   moduleNameMapper: {
@@ -26,5 +28,5 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'node'],
   setupFilesAfterEnv: ['<rootDir>/jest/setup.tsx'],
-  moduleDirectories: ['node_modules', '/src/jest'],
+  moduleDirectories: ['node_modules', './src/jest'],
 };

@@ -21,8 +21,8 @@ interface InputProps extends TextInputProps {
   ref?: any;
 }
 
-const TEST_ID_RIGHT_ICON = 'right_icon';
-const TEST_ID_INPUT = 'input';
+export const TEST_ID_RIGHT_ICON = 'right_icon';
+export const TEST_ID_INPUT = 'input';
 
 const Input: React.FC<InputProps> = React.forwardRef(
   (props: InputProps, ref: any) => {

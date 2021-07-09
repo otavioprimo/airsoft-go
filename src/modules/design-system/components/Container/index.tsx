@@ -1,14 +1,19 @@
 import React from 'react';
 
 import {ScrollView, SafeArea} from './style';
+import {ViewProps} from 'react-native';
 
 export const TEST_ID_SAFE_AREA = 'SafeArea';
 export const TEST_ID_SCROLl_VIEW = 'ScrollView';
 
-const Container: React.FC = ({children}) => {
+interface ContainerProps extends ViewProps {
+  children: React.ReactNode;
+}
+
+const Container: React.FC<ContainerProps> = props => {
   return (
-    <SafeArea testID={TEST_ID_SAFE_AREA}>
-      <ScrollView testID={TEST_ID_SCROLl_VIEW}>{children}</ScrollView>
+    <SafeArea {...props} testID={TEST_ID_SAFE_AREA}>
+      <ScrollView testID={TEST_ID_SCROLl_VIEW}>{props.children}</ScrollView>
     </SafeArea>
   );
 };
