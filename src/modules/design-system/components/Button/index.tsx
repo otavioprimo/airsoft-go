@@ -48,6 +48,8 @@ const loadings: VariantComponents = {
   link: LoadingLink,
 };
 
+export const TEST_ID_LOADING = 'LOADING';
+
 const Button: React.FC<ButtonProps> = React.forwardRef(
   (props: ButtonProps, ref: any) => {
     let {variant} = props;
@@ -57,12 +59,16 @@ const Button: React.FC<ButtonProps> = React.forwardRef(
 
     const Component = buttons[variant];
     const LabelComponent = labels[variant];
-    const Loading = loadings[variant];
+    const LoadingComponent = loadings[variant];
 
     return (
       <Component {...props} full={props.full} ref={ref}>
-        {props.loading && <Loading />}
-        <LabelComponent disabled={props.disabled}>{props.label}</LabelComponent>
+        {props.loading && <LoadingComponent testID={TEST_ID_LOADING} />}
+        {!props.onlyLoading && (
+          <LabelComponent disabled={props.disabled}>
+            {props.label}
+          </LabelComponent>
+        )}
       </Component>
     );
   },

@@ -21,6 +21,9 @@ interface InputProps extends TextInputProps {
   ref?: any;
 }
 
+const TEST_ID_RIGHT_ICON = 'right_icon';
+const TEST_ID_INPUT = 'input';
+
 const Input: React.FC<InputProps> = React.forwardRef(
   (props: InputProps, ref: any) => {
     const LABEL_TRANSLATE_Y_FOCUSED = -10;
@@ -85,7 +88,7 @@ const Input: React.FC<InputProps> = React.forwardRef(
     return (
       <ContainerInput>
         {props.leftIcon && (
-          <ContainerIcon>
+          <ContainerIcon testID={TEST_ID_RIGHT_ICON}>
             <Icon icon={props.leftIcon} />
           </ContainerIcon>
         )}
@@ -97,6 +100,7 @@ const Input: React.FC<InputProps> = React.forwardRef(
           )}
 
           <InputText
+            testID={TEST_ID_INPUT}
             {...props}
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
