@@ -83,7 +83,15 @@ const Input: React.FC<InputProps> = React.forwardRef(
       labelFontSize.value = startAnimation
         ? LABEl_FONT_SIZE_FOCUSED
         : LABEl_FONT_SIZE_FOCUSED_OUT;
-    }, [focused, typed]);
+    }, [
+      LABEL_TRANSLATE_X_FOCUSED,
+      LABEL_TRANSLATE_Y_FOCUSED,
+      focused,
+      labelFontSize,
+      labelTranslateX,
+      labelTranslateY,
+      typed,
+    ]);
 
     return (
       <ContainerInput>
