@@ -6,15 +6,24 @@ module.exports = {
       {
         paths: [
           {
-            rootPathSuffix: 'src',
+            rootPathSuffix: './src',
             rootPathPrefix: '~/',
           },
           {
-            rootPathSuffix: 'src/modules',
+            rootPathSuffix: './src/modules',
             rootPathPrefix: '#/',
+          },
+          {
+            rootPathSuffix: './src/modules/design-system/components',
+            rootPathPrefix: '@/',
+          },
+          {
+            rootPathSuffix: './jest',
+            rootPathPrefix: 'test/',
           },
         ],
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };

@@ -9,6 +9,7 @@ const WhiteTheme: DefaultTheme = {
   textSecondary: '#fff',
   background: '#fff',
   overlay: 'rgba(0, 0, 0, 0.7)',
+  disabled: '#aaa',
 
   danger: '#e00909',
   warning: '#ffcc00',

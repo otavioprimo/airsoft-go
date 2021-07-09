@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Design System - Button Should match snapshot - basic: Button_basic 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(230,230,230,.9)",
+      "borderRadius": 4,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 8,
+      "opacity": 1,
+      "width": 100,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#222",
+          "fontSize": 16,
+          "fontWeight": "700",
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    Sign-up
+  </Text>
+</View>
+`;
+
+exports[`Design System - Button Should match snapshot - default: Button_default 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgba(230,230,230,.9)",
+      "borderRadius": 4,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 8,
+      "opacity": 1,
+      "width": 100,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#222",
+          "fontSize": 16,
+          "fontWeight": "700",
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    Sign-up
+  </Text>
+</View>
+`;
+
+exports[`Design System - Button Should match snapshot - link: Button_link 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderRadius": 4,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 8,
+      "opacity": 1,
+      "width": 100,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+          "fontWeight": "700",
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    Sign-up
+  </Text>
+</View>
+`;
+
+exports[`Design System - Button Should match snapshot - outline: Button_outline 1`] = `
+<View
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": "rgba(230,230,230,.9)",
+      "borderRadius": 4,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "marginBottom": 8,
+      "opacity": 1,
+      "width": 100,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+          "fontWeight": "700",
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    Sign-up
+  </Text>
+</View>
+`;

@@ -2,13 +2,14 @@ import {DefaultTheme} from 'styled-components/native';
 
 const DarkTheme: DefaultTheme = {
   primary: '#222',
-  secondary: 'rgba(230,230,230,.7)',
+  secondary: 'rgba(230,230,230,.9)',
   secondaryStrong: '#fff',
   secondaryDisabled: 'rgba(230,230,230,.3)',
   textPrimary: '#fff',
   textSecondary: '#222',
   background: '#222',
   overlay: 'rgba(0, 0, 0, 0.7)',
+  disabled: '#aaa',
 
   danger: '#e00909',
   warning: '#ffcc00',

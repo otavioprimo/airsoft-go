@@ -7,6 +7,7 @@ export interface ThemeType {
   textSecondary: string;
   background: string;
   overlay: string;
+  disabled: string;
 
   danger: string;
   success: string;
