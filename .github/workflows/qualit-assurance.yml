@@ -16,11 +16,18 @@ jobs:
         with:
           node-version: 14.x
 
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
+
       - name: Install Dependencies
         run: npm install
 
       - name: Run Linter
-        run: npm lint .
+        run: npm run lint .
 
       - name: Run Tests
-        run: npm test
+        run: npm run test
