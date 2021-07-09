@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {StyleSheet, useColorScheme, View} from 'react-native';
 import {DarkTheme, WhiteTheme} from '../../theme';
 import {ThemeProvider} from 'styled-components';
 
