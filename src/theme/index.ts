@@ -16,6 +16,8 @@ export interface ThemeType {
   google: string;
   facebook: string;
   apple: string;
+
+  blue: string;
 }
 
 import DarkTheme from './dark.theme';

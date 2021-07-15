@@ -1,17 +1,20 @@
-import React from 'react';
-import {useColorScheme, StatusBar} from 'react-native';
+import React, {useState} from 'react';
+import {useColorScheme, TouchableOpacity, Text} from 'react-native';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
-import {ThemeProvider} from 'styled-components';
+import {ThemeProvider, useTheme} from 'styled-components';
 import styled from 'styled-components/native';
 
 import {DarkTheme, WhiteTheme} from '../../../theme';
 
 import {enableScreens} from 'react-native-screens';
 import {createNativeStackNavigator} from 'react-native-screens/native-stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import ButtonExample from './ButtonExample';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import InputExample from '..//examples/InputExample';
+import CardExample from '../examples/CardExample';
+import StatusBar from '../components/StatusBar';
 
 enableScreens();
 const InitNavigator = createNativeStackNavigator();
@@ -34,27 +37,58 @@ const ExamplesScreen: React.FC = () => {
       <Center>
         <Button label="Buttons" onPress={() => navigateTo('DSButtons')} />
         <Button label="Inputs" onPress={() => navigateTo('DSInputs')} />
+        <Button label="Cards" onPress={() => navigateTo('DSCards')} />
       </Center>
     </Container>
   );
 };
 
 const AppDesignSystem = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const theme = isDarkMode ? DarkTheme : WhiteTheme;
 
   return (
-    <ThemeProvider theme={isDarkMode ? DarkTheme : WhiteTheme}>
+    <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+        <StatusBar isDarkMode={isDarkMode} />
+
         <InitNavigator.Navigator
           initialRouteName="DesignSystem"
           screenOptions={{
             headerShown: true,
+            headerStyle: {
+              backgroundColor: theme.background,
+            },
+            headerTitleStyle: {
+              color: theme.textPrimary,
+            },
+            headerRight: () => (
+              <TouchableOpacity onPress={() => setIsDarkMode(!isDarkMode)}>
+                <Text style={{color: theme.textPrimary}}>Change Theme</Text>
+              </TouchableOpacity>
+            ),
           }}>
-          <InitNavigator.Screen name="DSExamples" component={ExamplesScreen} />
+          <InitNavigator.Screen
+            name="DSExamples"
+            component={ExamplesScreen}
+            options={{title: 'Design System'}}
+          />
 
-          <InitNavigator.Screen name="DSButtons" component={ButtonExample} />
-          <InitNavigator.Screen name="DSInputs" component={InputExample} />
+          <InitNavigator.Screen
+            name="DSButtons"
+            component={ButtonExample}
+            options={{title: 'Buttons'}}
+          />
+          <InitNavigator.Screen
+            name="DSInputs"
+            component={InputExample}
+            options={{title: 'Inputs'}}
+          />
+          <InitNavigator.Screen
+            name="DSCards"
+            component={CardExample}
+            options={{title: 'Cards'}}
+          />
         </InitNavigator.Navigator>
       </NavigationContainer>
     </ThemeProvider>

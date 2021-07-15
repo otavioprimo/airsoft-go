@@ -18,6 +18,8 @@ const DarkTheme: DefaultTheme = {
   facebook: '#3b5998',
   google: '#DB4437',
   apple: '#fff',
+
+  blue: '#11429b',
 };
 
 export default DarkTheme;

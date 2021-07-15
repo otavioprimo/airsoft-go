@@ -7,13 +7,18 @@ export const TEST_ID_SAFE_AREA = 'SafeArea';
 export const TEST_ID_SCROLl_VIEW = 'ScrollView';
 
 interface ContainerProps extends ViewProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  removeScrollView?: boolean;
 }
 
 const Container: React.FC<ContainerProps> = props => {
   return (
     <SafeArea {...props} testID={TEST_ID_SAFE_AREA}>
-      <ScrollView testID={TEST_ID_SCROLl_VIEW}>{props.children}</ScrollView>
+      {props.removeScrollView ? (
+        props.children
+      ) : (
+        <ScrollView testID={TEST_ID_SCROLl_VIEW}>{props.children}</ScrollView>
+      )}
     </SafeArea>
   );
 };

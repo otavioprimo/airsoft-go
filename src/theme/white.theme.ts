@@ -18,6 +18,8 @@ const WhiteTheme: DefaultTheme = {
   facebook: '#3b5998',
   google: '#DB4437',
   apple: '#fff',
+
+  blue: '#1e64e0',
 };
 
 export default WhiteTheme;
