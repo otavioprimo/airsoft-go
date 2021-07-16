@@ -21,7 +21,7 @@ exports[`Design System - Button Should match snapshot - basic: Button_basic 1`] 
       "justifyContent": "center",
       "marginBottom": 8,
       "opacity": 1,
-      "width": 100,
+      "width": 200,
     }
   }
 >
@@ -32,7 +32,6 @@ exports[`Design System - Button Should match snapshot - basic: Button_basic 1`] 
           "color": "#222",
           "fontSize": 16,
           "fontWeight": "700",
-          "marginLeft": 8,
         },
       ]
     }
@@ -63,7 +62,7 @@ exports[`Design System - Button Should match snapshot - default: Button_default 
       "justifyContent": "center",
       "marginBottom": 8,
       "opacity": 1,
-      "width": 100,
+      "width": 200,
     }
   }
 >
@@ -74,7 +73,6 @@ exports[`Design System - Button Should match snapshot - default: Button_default 
           "color": "#222",
           "fontSize": 16,
           "fontWeight": "700",
-          "marginLeft": 8,
         },
       ]
     }
@@ -105,7 +103,7 @@ exports[`Design System - Button Should match snapshot - link: Button_link 1`] = 
       "justifyContent": "center",
       "marginBottom": 8,
       "opacity": 1,
-      "width": 100,
+      "width": 200,
     }
   }
 >
@@ -116,7 +114,6 @@ exports[`Design System - Button Should match snapshot - link: Button_link 1`] = 
           "color": "#fff",
           "fontSize": 16,
           "fontWeight": "700",
-          "marginLeft": 8,
         },
       ]
     }
@@ -149,7 +146,7 @@ exports[`Design System - Button Should match snapshot - outline: Button_outline 
       "justifyContent": "center",
       "marginBottom": 8,
       "opacity": 1,
-      "width": 100,
+      "width": 200,
     }
   }
 >
@@ -160,7 +157,6 @@ exports[`Design System - Button Should match snapshot - outline: Button_outline 
           "color": "#fff",
           "fontSize": 16,
           "fontWeight": "700",
-          "marginLeft": 8,
         },
       ]
     }

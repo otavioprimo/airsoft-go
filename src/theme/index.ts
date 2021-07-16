@@ -18,6 +18,8 @@ export interface ThemeType {
   apple: string;
 
   blue: string;
+
+  modalBlurType: 'dark' | 'light';
 }
 
 import DarkTheme from './dark.theme';

@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
-import {useColorScheme, TouchableOpacity, Text} from 'react-native';
+import {TouchableOpacity, Text} from 'react-native';
 import {NavigationContainer, useNavigation} from '@react-navigation/native';
-import {ThemeProvider, useTheme} from 'styled-components';
+import {ThemeProvider} from 'styled-components';
 import styled from 'styled-components/native';
 
 import {DarkTheme, WhiteTheme} from '../../../theme';
 
 import {enableScreens} from 'react-native-screens';
 import {createNativeStackNavigator} from 'react-native-screens/native-stack';
-import {createStackNavigator} from '@react-navigation/stack';
 import ButtonExample from './ButtonExample';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import InputExample from '..//examples/InputExample';
 import CardExample from '../examples/CardExample';
 import StatusBar from '../components/StatusBar';
+import CardModalExample from '../examples/CardModalExample';
 
 enableScreens();
 const InitNavigator = createNativeStackNavigator();
@@ -38,6 +38,7 @@ const ExamplesScreen: React.FC = () => {
         <Button label="Buttons" onPress={() => navigateTo('DSButtons')} />
         <Button label="Inputs" onPress={() => navigateTo('DSInputs')} />
         <Button label="Cards" onPress={() => navigateTo('DSCards')} />
+        <Button label="Card Modal" onPress={() => navigateTo('DSCardModal')} />
       </Center>
     </Container>
   );
@@ -88,6 +89,11 @@ const AppDesignSystem = () => {
             name="DSCards"
             component={CardExample}
             options={{title: 'Cards'}}
+          />
+          <InitNavigator.Screen
+            name="DSCardModal"
+            component={CardModalExample}
+            options={{title: 'Card Modal'}}
           />
         </InitNavigator.Navigator>
       </NavigationContainer>

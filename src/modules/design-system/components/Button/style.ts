@@ -9,7 +9,7 @@ interface LabelProps {
 }
 
 const Button = styled.TouchableOpacity`
-  width: ${({full}: ButtonProps) => (full ? '100%' : '100px')};
+  width: ${({full}: ButtonProps) => (full ? '100%' : '200px')};
   height: 50px;
   background-color: ${props =>
     props.disabled ? props.theme.disabled : props.theme.secondary};
@@ -36,7 +36,6 @@ export const Link = styled(Button)`
 const Label = styled.Text`
   font-size: 16px;
   font-weight: 700;
-  margin-left: 8px;
 `;
 
 export const LabelBasic = styled(Label)`
@@ -56,7 +55,9 @@ export const LabelLink = styled(Label)<LabelProps>`
 const Loading = styled.ActivityIndicator.attrs(({theme}: any) => ({
   size: 'small',
   color: theme.secondary,
-}))``;
+}))`
+  margin-right: 8px;
+`;
 
 export const LoadingBasic = styled(Loading).attrs(({theme}) => ({
   color: theme.primary,

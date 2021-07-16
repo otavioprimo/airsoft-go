@@ -14,7 +14,7 @@ module.exports = {
             rootPathPrefix: '#/',
           },
           {
-            rootPathSuffix: './src/modules/design-system/components',
+            rootPathSuffix: './src/modules/design-system',
             rootPathPrefix: '@/',
           },
           {

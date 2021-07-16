@@ -7,7 +7,7 @@ export const TEST_ID_SAFE_AREA = 'SafeArea';
 export const TEST_ID_SCROLl_VIEW = 'ScrollView';
 
 interface ContainerProps extends ViewProps {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   removeScrollView?: boolean;
 }
 

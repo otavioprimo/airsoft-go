@@ -20,6 +20,7 @@ const DarkTheme: DefaultTheme = {
   apple: '#fff',
 
   blue: '#11429b',
+  modalBlurType: 'light',
 };
 
 export default DarkTheme;

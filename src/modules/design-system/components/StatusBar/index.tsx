@@ -12,7 +12,7 @@ const StatusBar: React.FC<StatusBarProps> = ({isDarkMode}) => {
       <RNStatusBar
         translucent
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={isDarkMode ? '#000' : '#fff'}
+        backgroundColor={isDarkMode ? '#000' : '#222'}
       />
     );
   };
