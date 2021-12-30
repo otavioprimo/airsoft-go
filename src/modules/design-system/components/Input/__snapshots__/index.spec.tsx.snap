@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Design System - Input Should match snapshot with leftIcon: Input_default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingBottom": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderBottomColor": "rgba(230,230,230,.9)",
+          "borderBottomWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        },
+      ]
+    }
+    testID="right_icon"
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={19}
+      bbWidth={19}
+      fill="#fff"
+      focusable={false}
+      height={19}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      secondaryFill={null}
+      secondaryOpacity={0.4}
+      size={19}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {},
+          Object {
+            "flex": 0,
+            "height": 19,
+            "width": 19,
+          },
+        ]
+      }
+      vbHeight={512}
+      vbWidth={512}
+      width={19}
+    >
+      <RNSVGGroup
+        fill={4294967295}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+      >
+        <RNSVGPath
+          d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"
+          fill={4294967295}
+          fillOpacity={1}
+          propList={
+            Array [
+              "fill",
+              "fillOpacity",
+            ]
+          }
+        />
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "height": 38,
+        },
+      ]
+    }
+  >
+    <Text
+      animatedStyle={
+        Object {
+          "value": Object {
+            "fontSize": 14,
+            "transform": Array [
+              Object {
+                "translateY": 10,
+              },
+              Object {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      collapsable={false}
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 14,
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "translateY": 10,
+            },
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      Email
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      label="Email"
+      leftIcon={
+        Object {
+          "icon": Array [
+            512,
+            512,
+            Array [],
+            "f0e0",
+            "M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z",
+          ],
+          "iconName": "envelope",
+          "prefix": "far",
+        }
+      }
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="rgba(230,230,230,.9)"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "rgba(230,230,230,.9)",
+            "borderBottomWidth": 1,
+            "color": "#fff",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontSize": 16,
+          },
+        ]
+      }
+      testID="input"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`Design System - Input Should match snapshot: Input_default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "paddingBottom": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "height": 38,
+        },
+      ]
+    }
+  >
+    <Text
+      animatedStyle={
+        Object {
+          "value": Object {
+            "fontSize": 14,
+            "transform": Array [
+              Object {
+                "translateY": 10,
+              },
+              Object {
+                "translateX": 0,
+              },
+            ],
+          },
+        }
+      }
+      collapsable={false}
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 14,
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "translateY": 10,
+            },
+            Object {
+              "translateX": 0,
+            },
+          ],
+        }
+      }
+    >
+      Email
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      label="Email"
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="rgba(230,230,230,.9)"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "rgba(230,230,230,.9)",
+            "borderBottomWidth": 1,
+            "color": "#fff",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontSize": 16,
+          },
+        ]
+      }
+      testID="input"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;

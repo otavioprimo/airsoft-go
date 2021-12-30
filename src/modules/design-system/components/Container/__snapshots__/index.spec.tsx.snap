@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Design System - Container Should match snapshot: DS_Container 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#222222",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+      },
+    ]
+  }
+  testID="SafeArea"
+>
+  <RCTScrollView
+    style={
+      Array [
+        Object {},
+      ]
+    }
+    testID="ScrollView"
+  >
+    <View />
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;

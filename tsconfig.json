@@ -37,10 +37,12 @@
 
     /* Module Resolution Options */
     "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
+    "baseUrl": ".",                       /* Base directory to resolve non-absolute module names. */
     "paths": {
       "~/*": ["src/*"],
-      "#/*": ["src/modules/*"]
+      "#/*": ["src/modules/*"],
+      "@/*": ["src/modules/design-system/*"],
+      "test/*": ["jest/*"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
@@ -60,10 +62,17 @@
     // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
+  "include": [
+    "src",
+    "./**/*.d.ts",
+    "node_modules/**/*.d.ts",
+    "node_modules/@types/**/*.d.ts"
+  ],
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
   ],
   "files": [
-    "./node_modules/redux-persist/types/integration/react.d.ts"
+    "./node_modules/redux-persist/types/integration/react.d.ts",
+    "./**/*.d.ts"
   ]
 }

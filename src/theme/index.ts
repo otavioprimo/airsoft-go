@@ -7,6 +7,7 @@ export interface ThemeType {
   textSecondary: string;
   background: string;
   overlay: string;
+  disabled: string;
 
   danger: string;
   success: string;
@@ -15,6 +16,10 @@ export interface ThemeType {
   google: string;
   facebook: string;
   apple: string;
+
+  blue: string;
+
+  modalBlurType: 'dark' | 'light';
 }
 
 import DarkTheme from './dark.theme';

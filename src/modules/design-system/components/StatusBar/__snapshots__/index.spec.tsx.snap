@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Design System - StatusBar Should match snapshot in dark mode: DS_StatusBar_Dark 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#222222",
+        "height": 20,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`Design System - StatusBar Should match snapshot in light mode: DS_StatusBar_Light 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#222222",
+        "height": 20,
+      },
+    ]
+  }
+/>
+`;
