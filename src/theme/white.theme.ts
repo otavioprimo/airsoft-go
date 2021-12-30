@@ -1,13 +1,13 @@
 import {DefaultTheme} from 'styled-components/native';
 
 const WhiteTheme: DefaultTheme = {
-  primary: '#eaeaea',
-  secondary: '#222',
+  primary: '#ffffff',
+  secondary: '#222222',
   secondaryStrong: '#000',
   secondaryDisabled: 'rgba(230,230,230,.3)',
   textPrimary: '#222',
   textSecondary: '#fff',
-  background: '#eaeaea',
+  background: '#ffffff',
   overlay: 'rgba(0, 0, 0, 0.7)',
   disabled: '#aaa',
 

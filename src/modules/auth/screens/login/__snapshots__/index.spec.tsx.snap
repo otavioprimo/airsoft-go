@@ -6,7 +6,7 @@ exports[`Testing Login Screen Should match snapshot: LoginScreen 1`] = `
   style={
     Array [
       Object {
-        "backgroundColor": "#222",
+        "backgroundColor": "#222222",
         "flexBasis": 0,
         "flexGrow": 1,
         "flexShrink": 1,
