@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+// @ts-ignore
 import React, {
+  ForwardedRef,
   forwardRef,
+  ForwardRefRenderFunction,
   RefObject,
   useCallback,
   useEffect,
@@ -39,9 +43,9 @@ export interface CardModalRefProps {
   hide: () => void;
 }
 
-const CardModal: React.FC<CardModalProps> = (
+const CardModal: ForwardRefRenderFunction<unknown, CardModalProps> = (
   {},
-  modalRef: RefObject<CardModalRefProps>,
+  modalRef: ForwardedRef<CardModalRefProps>,
 ) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [containerVisible, setContainerVisible] = useState(false);
@@ -67,15 +71,11 @@ const CardModal: React.FC<CardModalProps> = (
     };
   });
 
-  useEffect(() => {
-    modalVisible ? _showModal() : _hideModal();
-  }, [modalVisible]);
-
   const _showModal = useCallback(() => {
     width.value = FINAL_WIDTH;
     height.value = FINAL_HEIGHT;
     opacity.value = FINAL_OPACITY;
-  }, [modalVisible]);
+  }, [height, opacity, width]);
 
   const _hideModal = useCallback(() => {
     cancelAnimation(width);
@@ -85,7 +85,11 @@ const CardModal: React.FC<CardModalProps> = (
     width.value = INITIAL_WIDHT;
     height.value = INITIAL_HEIGHT;
     opacity.value = INITIAL_OPACITY;
-  }, [modalVisible]);
+  }, [height, opacity, width]);
+
+  useEffect(() => {
+    modalVisible ? _showModal() : _hideModal();
+  }, [_hideModal, _showModal, modalVisible]);
 
   useImperativeHandle(modalRef, () => ({
     show(content: any) {
