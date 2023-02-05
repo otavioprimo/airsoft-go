@@ -3,6 +3,12 @@ module.exports = {
   maxWorkers: 1,
   collectCoverage: false,
   collectCoverageFrom: ['<rootDir>/src/**'],
+  coveragePathIgnorePatterns: [
+    '.*__snapshots__/.*',
+    'style.ts',
+    './src/modules/core/*',
+    'App.tsx',
+  ],
   coverageReporters: ['text-summary', 'lcov'],
   testPathIgnorePatterns: ['__tests__/data/', '__tests__/helpers/'],
   transformIgnorePatterns: [
@@ -11,6 +17,8 @@ module.exports = {
       'react-native|' +
       'react-native-iphone-x-helper|' +
       '@react-navigation|' +
+      'react-native-reanimated|' +
+      '@fortawesome/react-native-fontawesome|' +
       '/.*)/)',
   ],
   moduleNameMapper: {
@@ -20,5 +28,5 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'node'],
   setupFilesAfterEnv: ['<rootDir>/jest/setup.tsx'],
-  moduleDirectories: ['node_modules', '/src/jest'],
+  moduleDirectories: ['node_modules', './src/jest'],
 };
