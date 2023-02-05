@@ -76,9 +76,8 @@ const CardExample: React.FC = () => {
   return (
     <Container removeScrollView>
       <List
-        numColumns={2}
-        columnWrapperStyle={{justifyContent: 'space-around'}}
-        style={{paddingHorizontal: 8, marginTop: 16}}
+        // numColumns={1}
+        // columnWrapperStyle={{justifyContent: 'space-around'}}
         data={data}
         keyExtractor={(item: any) => item.id}
         renderItem={renderItem}

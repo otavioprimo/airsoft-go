@@ -1,20 +1,6 @@
 import React from 'react';
 
-import {
-  Container,
-  BackgroundImage,
-  ContainerFooter,
-  ContainerInfos,
-  ContainerTop,
-  Title,
-  Subtitle,
-  Description,
-  FooterTitle,
-  FooterSubTitle,
-  ContainerFooterInfos,
-  Icon,
-  ContainerIcon,
-} from './style';
+import {Container} from './style';
 import {IconProp} from '@fortawesome/fontawesome-svg-core';
 
 interface CardProps {
@@ -61,35 +47,8 @@ const Card: React.FC<CardProps> = ({
       testID={TEST_ID_BUTTON}
       onPress={_onPress}
       onLongPress={_onLongPress}
-      delayLongPress={delayLongPress}>
-      <BackgroundImage
-        source={{
-          uri: image,
-        }}
-      />
-      <ContainerTop>
-        <ContainerInfos>
-          <Subtitle>{subtitle}️</Subtitle>
-          <Title>{title}</Title>
-
-          <Description>{description}</Description>
-        </ContainerInfos>
-        <ContainerFooter>
-          <FooterTitle>{footerTitle}</FooterTitle>
-          <ContainerFooterInfos>
-            <ContainerIcon>
-              <FooterSubTitle>{textFirstAction}</FooterSubTitle>
-              {iconFirstAction && <Icon icon={iconFirstAction} />}
-            </ContainerIcon>
-
-            <ContainerIcon>
-              <FooterSubTitle>{textSecondAction}</FooterSubTitle>
-              {iconSecondAction && <Icon icon={iconSecondAction} />}
-            </ContainerIcon>
-          </ContainerFooterInfos>
-        </ContainerFooter>
-      </ContainerTop>
-    </Container>
+      delayLongPress={delayLongPress}
+    />
   );
 };
 

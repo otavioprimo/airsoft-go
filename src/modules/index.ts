@@ -16,6 +16,6 @@ export const rootReducers = combineReducers({
 
 export type ApplicationState = ReturnType<typeof rootReducers>;
 
-export const rootSagas = function* rootSagas() {
+export const rootSagas = function* rootSagas(): unknown {
   return yield all([yield loginRedux.sagas()]);
 };

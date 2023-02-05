@@ -2,7 +2,7 @@ import {DefaultTheme} from 'styled-components/native';
 
 const DarkTheme: DefaultTheme = {
   primary: '#222222',
-  secondary: 'rgba(230,230,230,.9)',
+  secondary: '#e6e6e6f8',
   secondaryStrong: '#fff',
   secondaryDisabled: 'rgba(230,230,230,.3)',
   textPrimary: '#fff',
